@@ -1,5 +1,5 @@
-FROM httpd
-MAINTAINER arun
-LABEL Image creation
-EXPOSE 80
-COPY . /usr/local/apache2/htdocs/
+FROM Alpine.01
+WORKDIR ./app
+COPY . /usr/local/boges/app.java
+RUN "java""python"
+EXPOSE 8080
